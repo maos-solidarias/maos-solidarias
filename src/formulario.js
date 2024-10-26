@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "Doação Financeira para Medicamentos",
     ],
     AAARS: ["Frango", "Carne", "Arroz"],
+    ONG3: ["teste"],
   };
 
   const urlParams = new URLSearchParams(window.location.search);

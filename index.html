@@ -3,62 +3,393 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
-    <title>Mãos Solidárias</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>ONG | Mãos Solidárias</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="#sobre-nos">Sobre Nós</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#como-doar">Como Doar</a></li>
-          <li><a href="#faq">FAQ</a></li>
+        <div class="nav__logo"><a href="#">Mãos Solidárias.</a></div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#sobre">Sobre Nós</a></li>
+          <li class="link"><a href="#doe">Doe Agora</a></li>
+          <li class="link"><a href="#depoimento">Depoimentos</a></li>
+          <li class="link"><a href="#subscribe">Inscreva-se</a></li>
         </ul>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
       </nav>
+      <div class="section__container header__container" id="home">
+        <h1>Direcionamos sua doação para as ONG's que mais precisam.</h1>
+        <button class="btn btn__secondary" href="#sobre">
+          <a class="link-button" href="#sobre">Leia Mais Sobre</a>
+          <span><i class="ri-arrow-right-double-line"></i></span>
+        </button>
+      </div>
     </header>
 
-    <main>
-      <section id="slogan">
-        <h1>Seu passado, pode ser o futuro de alguém</h1>
-        <p>Ajudando quem precisa mais</p>
-      </section>
+    <section class="about" id="sobre">
+      <div class="section__container about__container">
+        <div class="about__grid">
+          <div class="about__content">
+            <p class="section__subheader">Sobre Nós</p>
+            <h2 class="section__header">História da Nossa ONG</h2>
+            <p class="para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              velit aliquam earum quos illum excepturi labore natus modi, autem
+              error est possimus quibusdam quis explicabo ducimus numquam nulla
+              incidunt rem? Velit possimus atque a tempore distinctio nobis qui
+              accusamus illo quidem! Fugiat, blanditiis animi labore a, iste
+              eligendi excepturi exercitationem sapiente perferendis quibusdam
+              asperiores illo. Reprehenderit ipsum enim culpa neque?
+            </p>
+            <br />
+            <p class="para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloremque obcaecati, nulla ut ducimus sapiente animi repellat
+              expedita corporis perferendis aperiam?
+            </p>
+          </div>
+          <div class="about__list">
+            <div class="about__item">
+              <span><i class="ri-global-fill"></i></span>
+              <h4>Fomos abraçados pelo mundo para este ato</h4>
+            </div>
+            <div class="about__item">
+              <span><i class="ri-bar-chart-fill"></i></span>
+              <h4>Aumento semanal de ajudar de todos os tipos</h4>
+            </div>
+            <div class="about__item">
+              <span><i class="ri-thumb-up-fill"></i></span>
+              <h4>
+                Confiança e aprovação de outras empresas ao redor do mundo
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section id="apresentacao">
-        <h2>Bem-vindo ao Mãos Solidárias</h2>
-        <p>
-          O Mãos Solidárias é uma iniciativa para conectar quem deseja ajudar
-          com quem mais precisa. Acreditamos que cada gesto de solidariedade
-          pode transformar vidas. Aqui você pode doar itens que não usa mais e
-          dar a chance para que outros façam bom uso deles.
+    <section class="stats" id="doe">
+      <div class="section__container stats__container">
+        <div class="stats__content">
+          <p class="section__subheader">Nosso insights</p>
+          <h2 class="section__header">Qual é o preço da "ajuda"?</h2>
+          <p class="para">
+            Não fazemos isso para obter lucro próprio, mas cada doação sua é
+            <span>direta</span>
+            para uma pessoa, uma família e uma empresa. Toda vida, micronegócio,
+            lar e familia importa para nós e, por isso, não vamos parar até
+            conseguirmos nosso objetivo: salvar tudo o que der para salvar!
+          </p>
+          <div class="stats__grid">
+            <div class="stats__card">
+              <span><i class="ri-building-4-line"></i></span>
+              <h4>+1800</h4>
+              <p>Empresas e Microempresas reabertas</p>
+            </div>
+            <div class="stats__card">
+              <span><i class="ri-user-fill"></i></span>
+              <h4>+2500</h4>
+              <p>Pessoas receberam ajuda direta em dinheiro</p>
+            </div>
+            <div class="stats__card">
+              <span><i class="ri-user-smile-line"></i></span>
+              <h4>+5500</h4>
+              <p>Pessoas beneficiadas com objetos</p>
+            </div>
+            <div class="stats__card">
+              <span><i class="ri-trophy-fill"></i></span>
+              <h4>+3500</h4>
+              <p>Pequenos projetos concluídos com sucesso</p>
+            </div>
+          </div>
+        </div>
+        <div class="stats__image">
+          <img src="assets/stats-1.jpg" alt="stats" />
+          <img src="assets/stats-2.jpg" alt="stats" />
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="section__container banner__container">
+        <div class="banner__content">
+          <p class="section__subheader">Como Doar?</p>
+          <h2 class="section__header">É muuuito simples mesmo, quer saber?</h2>
+          <p class="para">
+            Se você é uma pessoa normal pode doar diretamente para outra pessoa,
+            mas se você é uma pessoa jurídica poderá doar até para empresas de
+            pequeno/médio porte!
+          </p>
+          <div class="banner__btns">
+            <button class="btn btn__primary">
+              Pessoa Comum
+              <span><i class="ri-arrow-right-double-line"></i></span>
+            </button>
+            <button class="btn btn__primary">
+              Pessoa Jurídica
+              <span><i class="ri-arrow-right-double-line"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog" id="depoimento">
+      <div class="section__container blog__container">
+        <p class="section__subheader">Fique Por Dentro</p>
+        <h2 class="section__header">Das Últimas Notícias</h2>
+        <div class="blog__grid">
+          <div class="blog__card">
+            <img src="assets/blog-1.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>uol.com.br</span>
+              <span><i class="ri-time-line"></i> 20 de Outubro de 2024</span>
+              <span><i class="ri-thumb-up-line"></i> 57</span>
+            </div>
+            <h4>"Mãos Solidárias" recorde em ajudas!</h4>
+            <p>
+              ONG cresce semanalmente com muitas ajudas de empresas grandes,
+              como a Recode, e lidera em requisitos de ajudas diretas.
+            </p>
+          </div>
+          <div class="blog__card">
+            <img src="assets/blog-2.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i> BNC</span>
+              <span><i class="ri-time-line"></i> 23 de Outubro de 2024</span>
+              <span><i class="ri-thumb-up-line"></i> 180</span>
+            </div>
+            <h4>Reaberturas de multiplas empresas</h4>
+            <p>
+              "Mãos Solidárias" enviam mais de 10 milhões de reais para ajudar a
+              reconstruir estabelecimentos do zero.
+            </p>
+          </div>
+          <div class="blog__card">
+            <img src="assets/blog-3.jpg" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i> SBT</span>
+              <span><i class="ri-time-line"></i> 24 de Outubro de 2024</span>
+              <span><i class="ri-thumb-up-line"></i> 200</span>
+            </div>
+            <h4>Inovação dos Microempreendedores</h4>
+            <p>
+              Com o aumento de ajuda, muitas pessoas se reinventaram e
+              redescobriram como recomeçar seu pequeno/médio negócio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe" id="subscribe">
+      <div class="section__container subscribe__container">
+        <p class="section__subheader">Fique Por Dentro</p>
+        <h2 class="section__header">
+          Da Situação do<br />
+          Rio Grande do Sul
+        </h2>
+        <form action="/">
+          <input type="text" placeholder="Digite Seu Nome" />
+          <input type="text" placeholder="Digite Seu Email" />
+          <button class="btn btn__primary">Inscreva-se</button>
+        </form>
+        <p class="para">
+          Receba notícias por email, e aproveite para ficar por dentro da
+          nossa<br />
+          <a href="#">Politica de Privacidade</a> e
+          <a href="#">Termos de Uso</a>.
         </p>
-      </section>
+      </div>
+    </section>
 
-      <section id="imagem-video">
-        <h2>Conheça Nosso Trabalho</h2>
-      </section>
+    <section class="customer">
+      <div class="section__container customer__container">
+        <p class="section__subheader">Quem são</p>
+        <h2 class="section__header">o Fundadores</h2>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+          excepturi sapiente voluptatibus molestiae totam, tempora commodi
+          repellendus magnam, provident non eos corrupti hic distinctio esse in
+          aspernatur! Deserunt, dignissimos neque.
+        </p>
+        <div class="customer__review">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="customer__review__card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, autem? Corporis nam accusantium, possimus quia
+                    iste nulla adipisci molestiae ipsum.
+                  </p>
+                  <div class="customer__review__details">
+                    <img src="assets/guest.png" alt="customer" />
+                    <div>
+                      <h4>David Ben</h4>
+                      <h5>CEO</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer__review__card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minima architecto numquam, totam eius cum provident
+                    adipisci! Placeat optio ut quo.
+                  </p>
+                  <div class="customer__review__details">
+                    <img src="assets/guest.png" alt="customer" />
+                    <div>
+                      <h4>Liz</h4>
+                      <h5>CEO</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer__review__card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi numquam quidem aliquid similique debitis
+                    dignissimos ab maiores quam architecto harum!
+                  </p>
+                  <div class="customer__review__details">
+                    <img src="assets/guest.png" alt="customer" />
+                    <div>
+                      <h4>Fabio</h4>
+                      <h5>CEO</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer__review__card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi numquam quidem aliquid similique debitis
+                    dignissimos ab maiores quam architecto harum!
+                  </p>
+                  <div class="customer__review__details">
+                    <img src="assets/guest.png" alt="customer" />
+                    <div>
+                      <h4>Luciana</h4>
+                      <h5>CEO</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer__review__card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi numquam quidem aliquid similique debitis
+                    dignissimos ab maiores quam architecto harum!
+                  </p>
+                  <div class="customer__review__details">
+                    <img src="assets/guest.png" alt="customer" />
+                    <div>
+                      <h4>Wanderson</h4>
+                      <h5>CEO</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer__review__card">
+                  <span><i class="ri-double-quotes-r"></i></span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi numquam quidem aliquid similique debitis
+                    dignissimos ab maiores quam architecto harum!
+                  </p>
+                  <div class="customer__review__details">
+                    <img src="assets/guest.png" alt="customer" />
+                    <div>
+                      <h4>Venoso</h4>
+                      <h5>CEO</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section id="mapa">
-        <h2>Mapa de Áreas de Risco</h2>
-        <iframe
-          src="https://grd.defesacivil.rs.gov.br/portal/apps/Embed/index.html?webmap=58fa7153724a462bbdb610021da1ec5e&extent=-59.1857,-32.881,-48.1554,-28.0056&home=true&zoom=true&previewImage=false&scale=true&legend=true&disable_scroll=false&theme=light"
-          width="50%"
-          height="400px"
-          frameborder="0"
-          style="border: 0"
-        ></iframe>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2024 Mãos Solidárias. Todos os direitos reservados.</p>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h5><a href="#">Mãos Solidárias</a></h5>
+          <p>Sigam-nos em nossas redes sociais!</p>
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Navegação</h4>
+          <div class="footer__links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">Career</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Empresas Parceiras</h4>
+          <div class="footer__links">
+            <a href="#">Recode</a>
+            <a href="#">Pluxee</a>
+            <a href="#">Instituto Equatorial</a>
+            <a href="#">Instituto Localiza</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Ajuda</h4>
+          <div class="footer__links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Suporte ao Cliente</a>
+            <a href="#">Termos & Condições</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 | ONG Mãos Solidárias | Todos os Direitos Reservados.
+      </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./src/main.js"></script>
   </body>
 </html>

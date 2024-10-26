@@ -109,7 +109,7 @@ header {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.8)
     ),
-    url("/assets/header.png");
+    url("../assets/header.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,7 +278,7 @@ nav {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url("/assets/banner.png");
+    url("../assets/banner.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -353,7 +353,7 @@ nav {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url("/assets/subscribe.png");
+    url("../assets/subscribe.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

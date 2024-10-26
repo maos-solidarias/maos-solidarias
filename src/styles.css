@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* TESTE DO CARROSSEL / NÃO MEXA */
+.carrouse-section {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  /* align-items: center; */ 
+  background-color: #232220;
+  padding: 50px 0;
+}
+/* VOU COLOCAR LÁ PRA BAIXO DEPOIS, QUANDO EU VOLTAR EU TERMINO */
+
 :root {
   --primary-color: #ff581f;
   --secondary-color: #111111;

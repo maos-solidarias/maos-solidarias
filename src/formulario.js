@@ -1,3 +1,5 @@
+// Liz, termine todas as funções completas, pra quando eu voltar estilizar tudinho. Att, David.
+
 document.addEventListener("DOMContentLoaded", () => {
   const prioridades = {
     "Global Care": [

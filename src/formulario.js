@@ -7,7 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "Doação Financeira para Medicamentos",
     ],
     AAARS: ["Frango", "Carne", "Arroz"],
-    ONG3: ["teste"],
+    "Roupas que Transformam": [
+      "Calçados",
+      "Voluntarios para ajudar no transporte",
+    ],
   };
 
   const urlParams = new URLSearchParams(window.location.search);

@@ -50,7 +50,7 @@ A estrutura do projeto está organizada da seguinte forma:
 - Os elementos da página utilizam a biblioteca **ScrollReveal** para revelar conteúdos conforme o usuário rola pela página.
 - A biblioteca **Swiper** é utilizada para criar um carrossel de imagens com as principais ONGs e iniciativas.
 - O usuário pode clicar em cartões de blog para acessar mais informações sobre cada ONG.
-
+- A página utiliza a biblioteca Remix Icon para ícones e a biblioteca Swiper para carrosséis.
 ### Interação com Cartões de ONGS
 
 - Na página inicial, ao clicar em um cartão de ong, o usuário é redirecionado para a página `formulario.html`.
@@ -64,7 +64,6 @@ A estrutura do projeto está organizada da seguinte forma:
 - Após o envio bem-sucedido do formulário, o usuário recebe uma mensagem de agradecimento.
 - O nome da ONG selecionada é passado como parâmetro na URL e exibido no topo do formulário.
 - O formulário é estilizado utilizando o arquivo form.css.
-- A página utiliza a biblioteca Remix Icon para ícones e a biblioteca Swiper para carrosséis.
 - O script formulario.js é responsável por manipular a lógica do formulário, incluindo a validação e o envio dos dados.
 
 ---

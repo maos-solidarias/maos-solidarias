@@ -10,22 +10,24 @@ O **Projeto Mãos Solidárias** é uma aplicação web criada como parte de um h
 
 A estrutura do projeto está organizada da seguinte forma:
 
-- `assets/`: Diretório para armazenar arquivos estáticos, como imagens, ícones, entre outros recursos visuais.
-- `formulario.html`: Página HTML dedicada ao formulário de contato.
-- `index.html`: Página principal da aplicação.
-- `README.md`: Arquivo de documentação do projeto.
-- `src/`: Diretório contendo arquivos de estilo e scripts JavaScript.
-  - `form.css`: Arquivo CSS para estilização da página de formulário.
-  - `formulario.js`: JavaScript para manipulação e validação do formulário de contato.
-  - `main.js`: JavaScript principal para funcionalidades gerais da aplicação.
-  - `styles.css`: Arquivo CSS para estilização geral da aplicação.
+1. `assets/`: Diretório para armazenar arquivos estáticos, como imagens, ícones, entre outros recursos visuais.
+
+2. `src/`: Diretório contendo arquivos de estilo e scripts JavaScript.
+- - `form.css`: Arquivo CSS para estilização da página de formulário.
+- - `formulario.js`: JavaScript para manipulação e validação do formulário de contato.
+- - `main.js`: JavaScript principal para funcionalidades gerais da aplicação.
+- - `styles.css`: Arquivo CSS para estilização geral da aplicação.
+ 
+3. `formulario.html`: Página HTML dedicada ao formulário de contato.
+4. `index.html`: Página principal da aplicação.
+5. `README.md`: Arquivo de documentação do projeto.
 ---
 
 ```markdown
 maos-solidarias
 ├─ assets
-|   ├── css
-|   └── style.css
+|   └── imagens.png
+|   
 |  
 ├─ src
 |   ├── form.css
@@ -33,9 +35,9 @@ maos-solidarias
 |   ├── main.js
 |   └── styles.css
 |  
-├─ formulario.html
-├─ index.html
-└─ README.md
+├── formulario.html
+├── index.html
+└── README.md
 ```
 
 ## Tecnologias Utilizadas

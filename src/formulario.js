@@ -5,17 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
       "Doação Financeira para Medicamentos",
     ],
 
-    AAARS: [
+    "AAARS": [
       "Frango", 
       "Carne", 
       "Arroz",
       "Feijão"
     ],
 
-    "Roupas que Transformam": [
+    "Roupas Que Transformam": [
+      "Blusas (M e G)",
       "Calçados",
       "Voluntários para ajudar no transporte",
-    ],
+    ]
   };
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mensagemFinalDiv = document.querySelector(".mensagem-final");
 
   if (nomeOng && prioridades[nomeOng]) {
-    nomeOngDiv.innerText = `Você doará para ${nomeOng}`;
+    nomeOngDiv.innerText = `Você doará para: ${nomeOng}`;
     prioridades[nomeOng].forEach((prioridade) => {
       const listItem = document.createElement("li");
 
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       mensagemFinalDiv.classList.add("mensagem-erro");
       mensagemFinalDiv.classList.remove("mensagem-sucesso");
     } else {
-      mensagemFinalDiv.innerText = "Obrigada por doar!";
+      mensagemFinalDiv.innerText = "Obrigado por doar!";
       mensagemFinalDiv.classList.add("mensagem-sucesso");
       mensagemFinalDiv.classList.remove("mensagem-erro");
     }

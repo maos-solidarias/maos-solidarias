@@ -655,10 +655,16 @@ nav {
 }
 
 .logos-slide > p {
-  color: var(--black);
-  font-size: 30px;
-  margin: 0 30px;
   display: inline-block; 
+  margin: 0 30px;
+  font-size: 30px;
+  cursor: default;
+  color: var(--black);
+  transition: .3s ease-in-out;
+}
+
+.logos-slide > p:hover{
+  scale: 1.15;
 }
 
 @keyframes slide {

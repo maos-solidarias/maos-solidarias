@@ -630,3 +630,42 @@ nav {
     width: 100%;
   }
 }
+
+/* CARROSEL */
+.carousel-section {
+  overflow: hidden;
+  padding: 30px 0;
+  background: var(--secondary-color-light);
+  white-space: nowrap;
+}
+
+.carousel-section > .titulo-carousel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.carousel-section > .titulo-carousel > p {
+  font-size: 50px;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: slide 16s linear infinite;
+}
+
+.logos-slide > p {
+  color: var(--black);
+  font-size: 30px;
+  margin: 0 30px;
+  display: inline-block; 
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

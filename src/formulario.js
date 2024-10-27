@@ -1,24 +1,32 @@
-// Liz, termine todas as funções completas, pra quando eu voltar estilizar tudinho. Att, David.
-
 document.addEventListener("DOMContentLoaded", () => {
   const prioridades = {
     "Global Care": [
       "Voluntários Médicos",
       "Doação Financeira para Medicamentos",
     ],
-    AAARS: ["Frango", "Carne", "Arroz"],
+
+    AAARS: [
+      "Frango", 
+      "Carne", 
+      "Arroz",
+      "Feijão"
+    ],
+
     "Roupas que Transformam": [
       "Calçados",
-      "Voluntarios para ajudar no transporte",
+      "Voluntários para ajudar no transporte",
     ],
   };
 
   const urlParams = new URLSearchParams(window.location.search);
-  const nomeOng = urlParams.get("ong").replace(/"/g, "");
+  const nomeOng = urlParams.get("ong")?.replace(/"/g, "");
 
+  const nomeOngDiv = document.querySelector(".nome-ong");
   const listaPrioridades = document.getElementById("lista-prioridades");
+  const mensagemFinalDiv = document.querySelector(".mensagem-final");
 
   if (nomeOng && prioridades[nomeOng]) {
+    nomeOngDiv.innerText = `Você doará para ${nomeOng}`;
     prioridades[nomeOng].forEach((prioridade) => {
       const listItem = document.createElement("li");
 
@@ -42,13 +50,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const formulario = document.getElementById("priority-form");
   formulario.addEventListener("submit", (event) => {
     event.preventDefault();
+
     const checkboxes = formulario.querySelectorAll(
       'input[name="prioridades"]:checked'
     );
-    if (checkboxes.length === 0) {
-      alert("Por favor, selecione pelo menos uma prioridade.");
+    const nome = formulario.querySelector('#name').value;
+    const email = formulario.querySelector('#email').value;
+    const phone = formulario.querySelector('#phone').value;
+
+    if (!nome || !email || !phone || checkboxes.length === 0) {
+      mensagemFinalDiv.innerText = "Selecione uma opção para doar.";
+      mensagemFinalDiv.classList.add("mensagem-erro");
+      mensagemFinalDiv.classList.remove("mensagem-sucesso");
     } else {
-      alert("Obrigada por doar!");
+      mensagemFinalDiv.innerText = "Obrigada por doar!";
+      mensagemFinalDiv.classList.add("mensagem-sucesso");
+      mensagemFinalDiv.classList.remove("mensagem-erro");
     }
   });
 });

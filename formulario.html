@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/form.css">
+    <!-- CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- titulo -->
+    <title>Formulário de Prioridades</title>
+  </head>
+  <body>
+    <div id="ong-prioridades">
+      <div class="formulario">
+        <form id="priority-form" action="#" method="post">
+          <div class="nome-ong"></div>
+          <div class="item-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="item-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="item-form">
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <h4>Prioridades da ONG</h4>
+          <ul id="lista-prioridades"></ul>
+          <button type="submit">Doar</button>
+          <div class="mensagem-final"></div>
+        </form>
+      </div>
+    </div>
+    <script src="./src/formulario.js"></script>
+  </body>
+</html>

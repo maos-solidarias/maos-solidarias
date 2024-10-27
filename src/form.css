@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #ff581f;
+  --secondary-color: #111111;
+  --secondary-color-light: #232220;
+  --text-light: #a3a3a3;
+  --white: #ffffff;
+  --black: #000000;
+  --max-width: 1200px;
+}
+
+* {
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url("../assets/header.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+label {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+button {
+  font-size: 25px;
+  padding: 10px 250px;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--secondary-color-light);
+  transition: .3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--black);
+}
+
+#ong-prioridades {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.formulario {
+  display: flex;
+  border: 3px solid var(--black);
+  border-radius: 10px;
+  box-shadow: 10px 10px black;
+  padding: 50px 30px;
+  background-color: var(--secondary-color);
+}
+
+.nome-ong{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.item-form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  justify-content: space-between;
+  padding: 0 auto;
+}
+.item-form > label {
+  margin-bottom: 5px;
+}
+
+.item-form > input {
+  padding: 10px 5px;
+  font-size: 15px;
+  border: 3px solid var(--secondary-color-light);
+  border-radius: 5px;
+}
+
+.mensagem-final {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 20px 0;
+  color: var(--black);
+  font-size: 25px;
+}
+
+.mensagem-erro {
+  border: 3px solid var(--black);
+  background-color: rgb(255, 58, 58);
+}
+
+.mensagem-sucesso {
+  border: 3px solid var(--black);
+  background-color: rgb(94, 255, 94);
+}

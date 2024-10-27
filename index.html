@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- style.css -->
     <link rel="stylesheet" href="./src/styles.css" />
+    <!-- titulo -->
     <title>ONG | Mãos Solidárias</title>
   </head>
   <body>
@@ -23,8 +18,8 @@
         <ul class="nav__links" id="nav-links">
           <li class="link"><a href="#home">Home</a></li>
           <li class="link"><a href="#sobre">Sobre Nós</a></li>
-          <li class="link"><a href="#doe">Doe Agora</a></li>
-          <li class="link"><a href="#depoimento">Depoimentos</a></li>
+          <li class="link"><a href="#doe">Insights</a></li>
+          <li class="link"><a href="#doacao">Doe Agora</a></li>
           <li class="link"><a href="#subscribe">Inscreva-se</a></li>
         </ul>
         <div class="nav__menu__btn" id="menu-btn">
@@ -32,7 +27,7 @@
         </div>
       </nav>
       <div class="section__container header__container" id="home">
-        <h1>Direcionamos sua doação para as ONG's que mais precisam.</h1>
+        <h1>Direcionamos sua doação para as ONG's que mais <span>precisam</span>.</h1>
         <button class="btn btn__secondary" href="#sobre">
           <a class="link-button" href="#sobre">Leia Mais Sobre</a>
           <span><i class="ri-arrow-right-double-line"></i></span>
@@ -44,7 +39,7 @@
         <div class="about__grid">
           <div class="about__content">
             <p class="section__subheader">Sobre Nós</p>
-            <h2 class="section__header">História da Nossa ONG</h2>
+            <h2 class="section__header">História da Nossa <span>ONG</span></h2>
             <p class="para">
               A ONG Mãos Solidárias surgiu em resposta às devastadoras enchentes
               que atingiram o Rio Grande do Sul em 2024. Este evento
@@ -88,7 +83,7 @@
       <div class="section__container stats__container">
         <div class="stats__content">
           <p class="section__subheader">Nossos insights</p>
-          <h2 class="section__header">Qual é o preço da "ajuda"?</h2>
+          <h2 class="section__header">Qual é o preço da "<span>Ajuda</span>"?</h2>
           <p class="para">
             Em 2024, a tragédia das enchentes no Rio Grande do Sul mobilizou
             doações em massa, direcionadas a famílias, agricultores e pequenos
@@ -128,65 +123,13 @@
         </div>
       </div>
     </section>
-    <section class="blog" id="depoimento">
-      <div class="section__container blog__container">
-        <p class="section__subheader">Fique Por Dentro</p>
-        <h2 class="section__header">Das Últimas Notícias</h2>
-        <div class="blog__grid">
-          <div class="blog__card">
-            <img src="./assets/ong1.webp" alt="blog" />
-            <div>
-              <span><i class="ri-user-line"></i>uol.com.br</span>
-              <span><i class="ri-time-line"></i> 20 de Outubro de 2024</span>
-              <span><i class="ri-thumb-up-line"></i> 57</span>
-            </div>
-            <h4>
-              "Mãos Solidárias": Junte-se a nós para fazer a diferença!
-              Precisamos de voluntários médicos, psicólogos e doações.
-            </h4>
-            <p>
-              A Global Care é uma ONG dedicada a promover o bem-estar e a
-              inclusão social de populações vulneráveis. Com um foco em
-              assistência humana, a ONG atua em diversas frentes, oferecendo
-              suporte psicológico, jurídico e social para aqueles que enfrentam
-              situações de crise.
-            </p>
-          </div>
-          <div class="blog__card">
-            <img src="./assets/ong2.webp" alt="blog" />
-            <div>
-              <span><i class="ri-user-line"></i> BNC</span>
-              <span><i class="ri-time-line"></i> 23 de Outubro de 2024</span>
-              <span><i class="ri-thumb-up-line"></i> 180</span>
-            </div>
-            <h4>Reaberturas de multiplas empresas</h4>
-            <p>
-              "Mãos Solidárias" enviam mais de 10 milhões de reais para ajudar a
-              reconstruir estabelecimentos do zero.
-            </p>
-          </div>
-          <div class="blog__card">
-            <img src="assets/blog-3.jpg" alt="blog" />
-            <div>
-              <span><i class="ri-user-line"></i> SBT</span>
-              <span><i class="ri-time-line"></i> 24 de Outubro de 2024</span>
-              <span><i class="ri-thumb-up-line"></i> 200</span>
-            </div>
-            <h4>Inovação dos Microempreendedores</h4>
-            <p>
-              Com o aumento de ajuda, muitas pessoas se reinventaram e
-              redescobriram como recomeçar seu pequeno/médio negócio.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="banner">
+    <section class="banner" id="doacao">
       <div class="section__container banner__container">
         <div class="banner__content">
           <p class="section__subheader">Como Doar?</p>
           <h2 class="section__header">É muuuito simples mesmo, quer saber?</h2>
+          <!-- AQUI, ALGUÉM DEIXE UM TEXTO TENDENCIOSO PRA OUTRA SEÇÃO -->
           <p class="para">
             Se você é uma pessoa fisica pode doar diretamente para outra pessoa,
             mas se você é uma pessoa jurídica poderá doar até para empresas de
@@ -205,14 +148,91 @@
         </div>
       </div>
     </section>
-    <section class="" id=""></section>
+
+    <section class="blog" id="doe">
+      <div class="section__container blog__container">
+        <p class="section__subheader">Doe Aqui</p>
+        <h2 class="section__header">Para Uma <span>ONG</span></h2>
+        <p>"colocar aqui o texto chamativo, Fabio ou Liz..."</p>
+        <div class="blog__grid">
+          <div class="blog__card">
+            <img src="./assets/ong1.webp" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>endereço: teste</span>
+              <!-- <span><i class="ri-time-line"></i> 20 de Outubro de 2024</span>
+              <span><i class="ri-thumb-up-line"></i> 57</span> -->
+            </div>
+            <h4>
+              "<span>Global Care</span>": Junte-se a nós para fazer a diferença! Precisamos
+              de voluntários médicos, psicólogos e doações.
+            </h4>
+            <p>
+              A Global Care é uma ONG dedicada a promover o bem-estar e a
+              inclusão social de populações vulneráveis. Com um foco em
+              assistência humana, a ONG atua em diversas frentes, oferecendo
+              suporte psicológico, jurídico e social para aqueles que enfrentam
+              situações de crise.
+            </p>
+          </div>
+          <div class="blog__card">
+            <img src="./assets/ong2.webp" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i>endereço: teste</span>
+            </div>
+            <h4>
+              "<span>AAARS</span>": Junte-se a nós na luta contra a fome! Precisamos de
+              voluntários, doações de alimentos e recursos financeiros.
+            </h4>
+            <p>
+              A AAARS é uma organização que se dedica a promover a solidariedade
+              e a apoiar comunidades em situação de vulnerabilidade. Formada por
+              angolanos e amigos que vivem no estado, nossa missão é juntar e
+              distribuir alimentos e outros itens essenciais para quem realmente
+              precisa.
+            </p>
+          </div>
+          <div class="blog__card">
+            <img src="assets/ong3.webp" alt="blog" />
+            <div>
+              <span><i class="ri-user-line"></i> endereço: teste</span>
+            </div>
+            <h4>
+              "<span>Roupas Que Transformam</span>": Precisamos de calçados e voluntários
+
+              para distribuir solidariedade!
+            </h4>
+
+            <p>
+              A "Roupas que Transformam" é uma ONG situada no coração do Rio
+              Grande do Sul, comprometida em promover a solidariedade e o apoio
+              à comunidade por meio da doação de roupas e calçados. Acreditamos
+              que cada peça de vestuário tem o potencial de transformar vidas,
+              oferecendo dignidade e autoestima. Atualmente, nossa prioridade é
+              a arrecadação e distribuição de calçados, reconhecendo a
+              importância de garantir conforto e proteção aos pés daqueles que
+              mais precisam. Junte-se a nós nessa missão
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- não altere essa section! -->
+    <!-- Aqui, vou tentar criar o carrosel com as empresas parceiras de verdade como a Recode -->
+    <section class="carrouse-section" id="">
+      <!-- DIREÇÃO -->
+      <p><--- TESTE-CARROSSEL <---</p>
+      <p><--- TESTE-CARROSSEL <---</p>
+      <p><--- TESTE-CARROSSEL <---</p>
+      <p><--- TESTE-CARROSSEL <---</p>
+    </section>
 
     <section class="subscribe" id="subscribe">
       <div class="section__container subscribe__container">
         <p class="section__subheader">Fique Por Dentro</p>
         <h2 class="section__header">
           Da Situação do<br />
-          Rio Grande do Sul
+          <span>Rio Grande do Sul</span>
         </h2>
         <form action="/">
           <input type="text" placeholder="Digite Seu Nome" />
@@ -230,8 +250,8 @@
 
     <section class="customer">
       <div class="section__container customer__container">
-        <p class="section__subheader">Quem são</p>
-        <h2 class="section__header">o Fundadores</h2>
+        <p class="section__subheader">Depoimentos</p>
+        <h2 class="section__header">lorem impsum <span>dolor</span></h2>
         <p class="para">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
           excepturi sapiente voluptatibus molestiae totam, tempora commodi
@@ -369,11 +389,13 @@
         <div class="footer__col">
           <h4>Navegação</h4>
           <div class="footer__links">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Blog</a>
-            <a href="#">Career</a>
+            <ul style="text-decoration-line: none;">
+              <li class="link"><a href="#home">Home</a></li>
+              <li class="link"><a href="#sobre">Sobre Nós</a></li>
+              <li class="link"><a href="#doe">Insights</a></li>
+              <li class="link"><a href="#doacao">Doe Agora</a></li>
+              <li class="link"><a href="#subscribe">Inscreva-se</a></li>
+            </ul>
           </div>
         </div>
         <div class="footer__col">

@@ -61,3 +61,10 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 });
+
+document.querySelectorAll(".blog__card").forEach((card) => {
+  card.addEventListener("click", () => {
+    const ongName = card.querySelector("h4").innerText.split(":")[0].trim();
+    window.location.href = `formulario.html?ong=${encodeURIComponent(ongName)}`;
+  });
+});

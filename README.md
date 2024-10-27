@@ -51,7 +51,7 @@ A estrutura do projeto está organizada da seguinte forma:
 - A biblioteca **Swiper** é utilizada para criar um carrossel de imagens com as principais ONGs e iniciativas.
 - O usuário pode clicar em cartões de blog para acessar mais informações sobre cada ONG.
 
-### Interação com Cartões de Blog
+### Interação com Cartões de ONGS
 
 - Na página inicial, ao clicar em um cartão de ong, o usuário é redirecionado para a página `formulario.html`.
 - O nome da ONG selecionada é passado como parâmetro na URL, permitindo que a página de formulário exiba informações específicas daquela ONG.

@@ -19,8 +19,24 @@ A estrutura do projeto está organizada da seguinte forma:
   - `formulario.js`: JavaScript para manipulação e validação do formulário de contato.
   - `main.js`: JavaScript principal para funcionalidades gerais da aplicação.
   - `styles.css`: Arquivo CSS para estilização geral da aplicação.
-
 ---
+
+```markdown
+maos-solidarias
+├─ assets
+|   ├── css
+|   └── style.css
+|  
+├─ src
+|   ├── form.css
+|   ├── formulario.js
+|   ├── main.js
+|   └── styles.css
+|  
+├─ formulario.html
+├─ index.html
+└─ README.md
+```
 
 ## Tecnologias Utilizadas
 
